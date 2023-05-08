@@ -1,0 +1,5 @@
+backend_sanity/
+frontend_react/src/assets/
+frontend_react/build
+frontend_react/node_modules/
+frontend_react/.env

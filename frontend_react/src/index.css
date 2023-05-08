@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --font-base: 'Manrope', sans-serif;
+  --primary-color: rgb(180, 188, 208);
+  --bg-color: rgba(0,2,18);
+  --secondary-color: rgba(91,155,251);
+  --black-color: #191b1e;
+  --lightGray-color: #e4e4e4;
+  --whiteColor: #d0d6e0;
+  --gray-color: #6b7688;
+  --purple-color: #673fd7;
+  --pink-color: #be1cfa;
+  --white-color: #ffffff;
+  --gradient-text: linear-gradient(45deg, #54c8fa, #be1cfa, #54c8fa);
+  --gradient-text-sec: linear-gradient(45deg, #d0d6e0, #673fd7, #54c8fa);
+  --gradient-text-thir: linear-gradient(45deg, #d0d6e0, #BFF403, #54c8fa);
+  --gradient-text-four: linear-gradient(45deg, #d0d6e0, #7d7e88, #54c8fa);
+  --gradient-text-five: linear-gradient(45deg, #54c8fa, #be1cfa, #54c8fa);
+  --button-gradient-sec: linear-gradient(45deg, #BFF403, #54c8fa, #54c8fa);
+  --button-gradient: linear-gradient(45deg, #54c8fa, #be1cfa, #54c8fa);
+  --button-right: linear-gradient(to right, #54c8fa, #be1cfa, #54c8fa);
+  --linkedin-gradient: linear-gradient(45deg, #54c8fa, #d0d6e0, #54c8fa);
+  --github-gradient: linear-gradient(45deg, #fc7a71, #d0d6e0, #54c8fa);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}

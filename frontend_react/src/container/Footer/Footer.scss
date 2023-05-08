@@ -1,0 +1,160 @@
+#Contact {
+    background-color: var(--bg-color);
+}
+
+.app__footer {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        transition: all 0.5s ease-in-out;
+        background-size: 350%;
+        &:hover {
+            background-position: right;
+            background-size: 350%;
+
+            text-shadow: 0 0 45px #d0d6e0;
+        }
+    }
+}
+
+.app__footer-container {
+    border: 0.1rem solid rgba(208, 214, 224, 0.1);
+    border-radius: 5px;
+    padding: 15rem 0;
+    width: 70%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+        border: 0.1rem solid rgba(208, 214, 224, 0.35);
+        box-shadow: 10px 0 50px rgba(208, 214, 224, 0.35);
+    }
+
+    @media screen and (max-width: 900px) {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.app__footer-cards {
+    gap: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    margin: 3.5rem 0;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.app__footer-card-email {
+    min-width: 100px;
+    display: flex;
+
+    padding: 1rem 3rem;
+    border-radius: 60px;
+    border: none;
+    font-weight: 800;
+    border: 0.1rem solid rgba(208, 214, 224, 0.35);
+
+    transition: all 0.2s ease-in-out;
+
+    a {
+        color: var(--whiteColor);
+        outline: none;
+        font-family: var(--font-base);
+        font-size: 15px;
+
+        text-decoration: none;
+    }
+    transition: all 0.6s ease-in-out;
+
+    &:hover {
+        box-shadow: 0 0 50px 5px rgba(208, 214, 224, 0.35);
+        text-shadow: 0 0 50px 5px rgba(208, 214, 224, 0.35);
+    }
+
+    @media screen and (max-width: 450px) {
+        width: 100%;
+    }
+}
+
+.app__footer-card-linkedin {
+    min-width: 100px;
+    display: flex;
+
+    padding: 1rem 3rem;
+    border-radius: 60px;
+    border: none;
+
+    font-weight: 800;
+    border: 0.1rem solid rgba(208, 214, 224, 0.35);
+
+    transition: all 0.2s ease-in-out;
+
+    a {
+        color: var(--whiteColor);
+        outline: none;
+        font-family: var(--font-base);
+        font-size: 15px;
+        background-image: var(--linkedin-gradient);
+        background-size: 300%;
+        text-decoration: none;
+    }
+    transition: all 0.6s ease-in-out;
+    &:hover {
+        box-shadow: 0 0 50px 15px rgba(54, 113, 152, 0.35);
+    }
+
+    @media screen and (max-width: 450px) {
+        width: 100%;
+    }
+}
+.app__footer-card-github {
+    min-width: 100px;
+    display: flex;
+
+    padding: 1rem 3rem;
+    border-radius: 60px;
+    border: none;
+
+    font-weight: 800;
+    border: 0.1rem solid rgba(208, 214, 224, 0.35);
+
+    transition: all 0.2s ease-in-out;
+
+    a {
+        color: var(--whiteColor);
+        outline: none;
+        font-family: var(--font-base);
+        font-size: 15px;
+        background-image: var(--github-gradient);
+        background-size: 250%;
+        text-decoration: none;
+    }
+    transition: all 0.6s ease-in-out;
+    &:hover {
+        box-shadow: 0 0 50px 15px rgba(199, 78, 78, 0.35);
+    }
+
+    @media screen and (max-width: 450px) {
+        width: 100%;
+    }
+}
