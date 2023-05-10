@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { HiMenuAlt4, HiX } from "react-icons/hi";
+import { HiMenuAlt4 } from "react-icons/hi";
 import { motion } from "framer-motion";
-
-import { images } from "../../constants";
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -21,14 +19,13 @@ const Navbar = () => {
             {/* For mobile */}
             <div className='app__navbar-menu'>
                 <HiMenuAlt4 onClick={() => setToggle(true)} />
-
                 {toggle && (
                     <motion.div
-                        whileInView={{ x: [250, 0] }}
+                        whileInView={{ opacity: [0, 1] }}
                         transition={{ duration: 0.25, ease: "easeInOut" }}
                     >
-                        <HiX onClick={() => setToggle(false)} />
-                        <ul>
+                        <HiMenuAlt4 onClick={() => setToggle(false)} />
+                        <ul >
                             {["Home", "Experience", "Projects", "Contact"].map(
                                 (item) => (
                                     <li key={item}>

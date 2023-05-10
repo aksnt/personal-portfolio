@@ -11,10 +11,9 @@
     z-index: 1;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
     h2 {
-        align-items: center;
-        justify-content: center;
         font-size: 25px;
         letter-spacing: 8px;
         transition: all 0.5s ease-in-out;
@@ -27,14 +26,15 @@
 .app__skills-container {
     border: 0.1rem solid rgba(208, 214, 224, 0.1);
     border-radius: 5px;
-    padding: 2rem 3.5rem;
+    padding: 5rem 3.5rem;
     width: 90%;
-    margin-top: 5rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
     transition: all 0.5s ease-in-out;
+    z-index: 100;
     &:hover {
         border: 0.1rem solid rgba(208, 214, 224, 0.35);
         box-shadow: 10px 0 50px rgba(208, 214, 224, 0.35);
@@ -72,102 +72,74 @@
     justify-content: flex-start;
     align-items: flex-start;
 
+
     .app__skills-exp-work {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         margin-bottom: 1rem;
+        padding-left: 6.5rem;
+
 
         h4 {
             color: var(--primary-color);
             font-weight: 500;
-            font-size: 20px;
             letter-spacing: 0.1px;
-
-            @media screen and (min-width: 2000px) {
-                font-size: 2rem;
-            }
-
-            @media screen and (max-width: 750px) {
-                font-size: 1rem;
-                margin-left: -20px;
+            font-size: 1.25rem;
+    
+            @media screen and (max-width: 580px) {
+                padding-left: 0rem;
+                font-size: 0.75rem;
             }
         }
 
         p {
-            font-weight: 400;
-            font-size: 15px;
-            color: var(--gray-color);
-
-            @media screen and (min-width: 2000px) {
-                font-size: 1.5rem;
+            font-size: 0.85rem;
+            @media screen and (max-width: 580px) {
+                padding-left: 0rem;
+                font-size: 0.55rem;
             }
 
-            @media screen and (max-width: 750px) {
-                font-size: 1rem;
-                margin-left: -20px;
-            }
         }
+
+            
+        @media screen and (max-width: 980px) {
+            padding-left: 2rem;
+
+        }
+
+    }
+    @media screen and (max-width: 980px) {
+        margin-right: -4rem;
     }
 }
 
 .app__skills-exp-year {
-    width: 250px;
+    width: 178px;
     height: 100px;
     flex-shrink: 0;
-    
 
     h4 {
         color: var(--whiteColor);
         font-weight: 800;
-        font-size: 35px;
+        font-size: 2rem;
         &:hover {
             background-position: right;
             text-shadow: 0 0 20px rgba(228, 228, 228, 0.5);
         }
-    }
 
-    p {
-        font-weight: 800;
-        font-size: 12px;
-        color: var(--secondary-color);
-    }
-
-    @media screen and (max-width: 1000px) {
-        margin-right: 1rem;
-
-        h4 {
-            font-weight: 800;
-            font-size: 25px;
-            color: var(--secondary-color);
+        @media screen and (max-width: 1080px) {
+            font-size: 2rem;
         }
 
-        p {
-            justify-content: flex;
-            flex-direction: row;
-            font-weight: 800;
-            font-size: 10px;
-            color: var(--secondary-color);
+        @media screen and (max-width: 580px) {
+            margin-left: -3rem;
+            font-size: 0.95rem;
         }
+        
     }
-    @media screen and (min-width: 2000px) {
-        margin-right: 1rem;
 
-        h4 {
-            font-weight: 800;
-            font-size: 45px;
-            color: var(--secondary-color);
-        }
-
-        p {
-            justify-content: flex;
-            flex-direction: row;
-            font-weight: 800;
-            font-size: 20px;
-            color: var(--secondary-color);
-        }
-    }
 }
 
 .skills-tooltip {

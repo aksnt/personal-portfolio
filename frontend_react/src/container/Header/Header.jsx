@@ -1,8 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import BackgroundAnimation from "../BackgroundAnimation/BackgroundAnimation.js";
-
 import { AppWrap } from "../../Wrapper";
 import "./Header.scss";
 
@@ -14,10 +12,8 @@ const Header = () => (
                 whileInView={{
                     opacity: [0, 1, 0.2],
                 }}
-                transition={{ duration: 4, easing: "easeIn" }}
+                transition={{ duration: 3, easing: "easeIn" }}
             >
-                    <BackgroundAnimation />
-
             </motion.div>
             <motion.div
                 className='app__header-info'
@@ -28,22 +24,22 @@ const Header = () => (
                 transition={{ duration: 2, ease: "easeInOut" }}
             >
                 <h2 className='bold-text'>Hello, I am</h2>
-                <h1 className='gradient__text'>Akshil Nathu</h1>
+                <h1 className='head-text gradient__text'>Akshil Nathu</h1>
                 <p className='p-text'>
-                    <span>Software Engineer</span>
+                    Software Engineer
                 </p>
                 <div className='buttons'>
                     <button
-                        className='button'
+                        className='button-exp'
                         onClick={() => (window.location = `#Experience`)}
                     >
-                        Experience &gt;
+                        <p className='button-text gradient__text-sec'>Experience &gt;</p>
                     </button>
                     <button
-                        className='button'
+                        className='button-con'
                         onClick={() => (window.location = "#Contact")}
                     >
-                        Contact Me &gt;
+                        <p className='button-text gradient__text-four'>Contact Me &gt;</p>
                     </button>
                 </div>
             </motion.div>

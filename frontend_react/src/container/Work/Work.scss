@@ -34,14 +34,13 @@
 .app__work-filter {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin: 3rem 0;
 
     
     .app__work-filter-item {
-        font-size: 15px;
         padding: 1rem 1.5rem;
         border-radius: 60px;
 
@@ -56,18 +55,46 @@
             box-shadow: 0 0 50px 15px rgba(208, 214, 224, 0.35);
         }
 
-        @media screen and (min-width: 2000px) {
+        @media screen and (min-width: 2561px) {
+            padding: 2rem 3.5rem;
+        }
+    
+        @media screen and (max-width: 2560px) {
+            padding: 1.75rem 3rem;
+        }
+
+        @media screen and (max-width: 1080px) {
+            padding: 1.25rem 2.25rem;
+        }
+
+        @media screen and (max-width: 580px) {
             padding: 1rem 2rem;
-            border-radius: 0.85rem;
         }
     }
 
     .item-active {
-        padding: 1rem 3rem;
-        font-size: 15px;
+        font-size: 2rem;
         color: var(--whiteColor);
         background-image: var(--button-gradient-sec);
         background-size: 300%;
+
+        @media screen and (min-width: 2561px) {
+            padding: 2rem 3.5rem;
+        }
+    
+        @media screen and (max-width: 2560px) {
+            padding: 1.75rem 3rem;
+        }
+
+        @media screen and (max-width: 1080px) {
+            padding: 1.25rem 2.25rem;
+            font-size: 1.25rem;
+        }
+
+        @media screen and (max-width: 580px) {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+        }
     }
 }
 
@@ -82,10 +109,8 @@
     .app__work-item {
         width: 300px;
         flex-direction: column;
-        margin: 2rem;
-        padding: 2rem 2rem;
         color: var(--primary-color);
-        border: 0.1rem solid rgba(208, 214, 224, 0.05);
+        border: 0.1rem solid rgba(36, 238, 10, 0.05);
         transition: all 0.4s ease;
         
         &:hover {
@@ -93,15 +118,22 @@
             box-shadow: 0 0 50px rgba(208, 214, 224, 0.35);
         }
 
-        @media screen and (min-width: 2000px) {
-            width: 370px;
-            padding: 1rem;
+        @media screen and (min-width: 2561px) {
+            width: calc(30% - 2rem);
+            padding: 2rem;
             border-radius: 0.75rem;
         }
-        @media screen and (max-width: 500px) {
-            width: 100%;
-            margin: 1rem;
+    
+        @media screen and (max-width: 2560px) {
+            width: calc(33% - 2rem);
+            padding: 2rem;
         }
+    
+        @media screen and (max-width: 1080px) {
+            width: calc(50% - 0rem);
+            padding: 2rem;
+        }
+
     }
 }
 
@@ -161,11 +193,10 @@
 }
 
 .app__work-content {
-    // padding: 1rem;
+    padding: 1.5rem 0;
     width: 100%;
     position: relative;
     flex-direction: column;
-
 
     h4 {
         align-items: center;
@@ -174,14 +205,31 @@
         color: var(--whiteColor);
         margin-top: 1rem;
         line-height: 1.5;
-        font-size: 25px;
     }
     p {
         align-items: center;
         justify-content: center;
         text-align: center;
-        font-size: 16px;
         color: var(--primary-color);
+        font-weight: 500;
+        letter-spacing: 0.1px;
+
+        @media screen and (min-width: 2561px) {
+            font-size: 1.5rem;
+        }
+    
+        @media screen and (max-width: 2560px) {
+            font-size: 1.25rem;
+        }
+    
+        @media screen and (max-width: 1080px) {
+            font-size: 1rem;
+        }
+    
+        @media screen and (max-width: 580px) {
+            font-size: 0.75rem;
+        }
+
     }
 
     .app__work-tag {
@@ -192,15 +240,9 @@
         top: -45px;
 
         p {
-            font-size: 14px;
             font-weight: 500;
         }
         
-        &:hover {
-            color: var(--whiteColor);
-            background-color: var(--purple-color);
-            background-size: 200%;
-        }
     }
     transition: all 0.5s ease-in-out;
 }

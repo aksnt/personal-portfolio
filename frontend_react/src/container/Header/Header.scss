@@ -44,74 +44,33 @@
     height: 100%;
     margin-bottom: 5rem;
     z-index: 3;
+    opacity: 0;
 
     h2 {
         color: var(--primary-color);
         text-align: center;
-        font-size: 30px;
     }
     h1 {
-        font-size: 80px;
         text-align: center;
         transition: all 0.5s ease-in-out;
         &:hover {
             background-position: right;
             text-shadow: 0 0 100px #54c8fa;
         }
+
+        @media screen and (max-width: 580px) {
+            h1 {
+                font-size: 10rem;
+            }
+        }
     }
 
     p {
         color: var(--primary-color);
         text-align: center;
-        font-size: 30px;
     }
 
-    @media screen and (max-width: 2000px) {
-        h2 {
-            font-size: 20px;
-        }
-        h1 {
-            font-size: 55px;
-            margin: 1rem 0;
-        }
-        p {
-            font-size: 20px;
-        }
-    }
-
-    @media screen and (max-width: 1180px) {
-        h2 {
-            font-size: 30px;
-        }
-        h1 {
-            font-size: 55px;
-            margin: 1rem 0;
-        }
-        p {
-            font-size: 20px;
-        }
-    }
-    @media screen and (max-width: 580px) {
-        padding: 2rem 0;
-        margin-top: 5rem;
-
-        h2 {
-            font-size: 15px;
-        }
-        h1 {
-            font-size: 40px;
-        }
-        p {
-            font-size: 15px;
-        }
-    }
-    &:hover {
-        cursor: default;
-        background-position: right center;
-        button {
-            background-image: var(--button-right);
-        }
-    }
+    
 }
 
 .buttons {
@@ -120,37 +79,72 @@
     align-items: center;
     justify-content: center;
 
-    button {
+    .button-exp {
         z-index: 3;
-        padding: 2rem 5rem;
+        padding: 1.25rem 2.25rem;
         border-radius: 60px;
-        border: none;
-        background-image: var(--button-gradient);
+        border: 0.1rem solid rgba(208, 214, 224, 0.4);
         background-size: 300%;
 
-        font-weight: 600;
-        color: var(--whiteColor);
         outline: none;
         margin: 2.25rem 0 0 0;
-        font-family: var(--font-base);
-        font-size: 25px;
-
-        @media screen and (max-width: 2000px) {
-            padding: 1.25rem 2.25rem;
-            font-size: 15px;
-        }
-        @media screen and (max-width: 768px) {
-            padding: 1rem 1rem;
-            font-size: 15px;
-        }
+        background-color: transparent;
 
         transition: all 0.75s ease-in-out;
         &:hover {
             cursor: pointer;
-            background-position: right center;
-            button {
-                background-image: var(--button-right);
-            }
+            box-shadow: 0 0 50px 15px rgba(149, 68, 230, 0.35);
+        }
+
+        @media screen and (min-width: 2561px) {
+            padding: 2rem 3.5rem;
+        }
+    
+        @media screen and (max-width: 2560px) {
+            padding: 1.75rem 3rem;
+        }
+
+        @media screen and (max-width: 1080px) {
+            padding: 1.25rem 2.25rem;
+        }
+
+        @media screen and (max-width: 580px) {
+            padding: 1rem 2rem;
+        }
+    
+    }
+
+    .button-con {
+        z-index: 3;
+        padding: 1.25rem 2.25rem;
+        border-radius: 60px;
+        border: 0.1rem solid rgba(208, 214, 224, 0.4);
+        background-size: 300%;
+        outline: none;
+        margin: 2.25rem 0 0 0;
+        background-color: transparent;
+
+        transition: all 0.75s ease-in-out;
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0 0 50px 5px rgba(208, 214, 224, 0.35);
+        }
+
+        @media screen and (min-width: 2561px) {
+            padding: 2rem 3.5rem;
+        }
+    
+        @media screen and (max-width: 2560px) {
+            padding: 1.75rem 3rem;
+        }
+
+        @media screen and (max-width: 1080px) {
+            padding: 1.25rem 2.25rem;
+        }
+
+        @media screen and (max-width: 580px) {
+            padding: 1rem 2rem;
         }
     }
+
 }

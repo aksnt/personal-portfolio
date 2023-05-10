@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-import { images } from "../../constants";
+import React, { useEffect, useRef } from "react";
 import { AppWrap, MotionWrap } from "../../Wrapper";
-import { BsLinkedin, BsGithub } from "react-icons/bs";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -41,6 +39,9 @@ const Footer = () => {
                             </a>
                         </div>
                     </div>
+                    <p className='p-text'>
+                        <span>Based in Sydney</span>
+                    </p>
                 </div>
             </div>
         </>

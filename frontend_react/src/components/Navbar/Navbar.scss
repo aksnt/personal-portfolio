@@ -1,22 +1,21 @@
 .app__navbar {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-
-    padding: 1rem 2rem;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 0 2px rgba(123, 123, 123, 0.95);
-    // border: 0.5px solid rgb(168, 168, 168);
+    width: 97%;
+    padding-top: 1rem;
+    padding-bottom: 1.5em;
     position: fixed;
-    z-index: 2;
+    z-index: 10;
+
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 .app__navbar-name {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
 
     a {
         color: var(--primary-color);
@@ -74,70 +73,53 @@
 }
 
 .app__navbar-menu {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-
+    position: absolute;
+    top: 0;
+    right: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--secondary-color);
-
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 1rem;
     svg {
-        width: 70%;
-        height: 70%;
-        color: var(--white-color);
+        color: var(--whiteColor);
     }
 
     div {
-        position: fixed;
+        opacity: 0;
+        position: absolute;
         top: 0;
-        bottom: 0;
         right: 0;
         z-index: 0;
 
-        padding: 1em;
-
-        width: 100%;
-        height: 100vh;
+        padding: 1rem;
 
         display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        flex-direction: column;
-
-        background-color: var(--white-color);
-        background-size: cover;
-        background-repeat: repeat;
-
-        box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
-
+        justify-content: right;
+        align-items: right;
         svg {
-            width: 35px;
-            height: 35px;
-            color: var(--secondary-color);
-            margin: 0.5rem 1rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 1rem;
+            color: var(--whiteColor);
         }
-
-        ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-
+        ul { 
+            padding: 2rem 0;
             display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
+            text-align: right;
             flex-direction: column;
 
             li {
-                margin: 1rem;
+                top: 0;
+                right: 0;
+                margin: 0.5rem 0;
+                align-items: right;
+                               
 
                 a {
-                    color: var(--gray-color);
+                    color: var(--primary-color);
                     text-decoration: none;
-                    font-size: 1rem;
+                    font-size: 14px;
                     font-weight: 500;
                     transition: all 0.3s ease-in-out;
 
@@ -146,22 +128,9 @@
                     }
                 }
             }
-            @media screen and (min-width: 900px) {
-                display: none;
-            }
         }
     }
     @media screen and (min-width: 900px) {
         display: none;
-    }
-    @media screen and (max-width: 870px) {
-        div {
-            width: 60%;
-        }
-    }
-    @media screen and (max-width: 550px) {
-        div {
-            width: 100%;
-        }
     }
 }

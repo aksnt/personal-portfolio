@@ -43,7 +43,7 @@ const Work = () => {
                             <div
                                 key={index}
                                 onClick={() => handleWorkFilter(item)}
-                                className={`app__work-filter-item app__flex p-text gradient__text-four ${
+                                className={`app__work-filter-item app__flex button-text gradient__text-four ${
                                     activeFilter === item ? "item-active" : ""
                                 }`}
                             >
