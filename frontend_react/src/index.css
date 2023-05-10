@@ -2,9 +2,9 @@
 
 :root {
   --font-base: 'Manrope', sans-serif;
-  --primary-color: rgb(180, 188, 208);
+  --primary-color: #b4bcd0;
   --bg-color: rgba(0,2,18);
-  --secondary-color: rgba(91,155,251);
+  --secondary-color: #5b9bfb;
   --black-color: #191b1e;
   --lightGray-color: #e4e4e4;
   --whiteColor: #d0d6e0;
@@ -13,10 +13,12 @@
   --pink-color: #be1cfa;
   --white-color: #ffffff;
   --gradient-text: linear-gradient(45deg, #54c8fa, #be1cfa, #54c8fa);
+  --gradient-text-rev: linear-gradient(45deg, #673fd7, #54c8fa, #be1cfa);
   --gradient-text-sec: linear-gradient(45deg, #d0d6e0, #673fd7, #54c8fa);
   --gradient-text-thir: linear-gradient(45deg, #d0d6e0, #BFF403, #54c8fa);
-  --gradient-text-four: linear-gradient(45deg, #d0d6e0, #7d7e88, #54c8fa);
+  --gradient-text-four: linear-gradient(45deg, #d0d6e0, #7d7e88, #d0d6e0);
   --gradient-text-five: linear-gradient(45deg, #54c8fa, #be1cfa, #54c8fa);
+  --gradient-text-six: linear-gradient(45deg, #54c8fa, #673fd7, #54c8fa);
   --button-gradient-sec: linear-gradient(45deg, #BFF403, #54c8fa, #54c8fa);
   --button-gradient: linear-gradient(45deg, #54c8fa, #be1cfa, #54c8fa);
   --button-right: linear-gradient(to right, #54c8fa, #be1cfa, #54c8fa);

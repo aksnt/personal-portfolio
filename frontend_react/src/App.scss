@@ -88,7 +88,7 @@
     font-size: 2.75rem;
     font-weight: 800;
     text-align: center;
-    color: var(--black-color);
+    color: var(--primary-color);
     text-transform: capitalize;
 
     @media screen and (min-width: 2561px) {
@@ -310,6 +310,24 @@
     background-clip: text;
     color: transparent;
 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradient__text-six {
+    background-image: var(--gradient-text-six);
+    background-size: 200%;
+    background-clip: text;
+    color: transparent;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.span-text{
+    background-image: var(--gradient-text-rev);
+    background-size: 200%;
+    background-clip: text;
+    color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

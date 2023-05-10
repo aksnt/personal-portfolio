@@ -3,3 +3,6 @@ frontend_react/src/assets/
 frontend_react/build
 frontend_react/node_modules/
 frontend_react/.env
+frontend_react/src/container/About
+frontend_react/.DS_Store
+.DS_Store

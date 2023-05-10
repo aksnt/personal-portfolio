@@ -16,14 +16,13 @@
     h2 {
         align-items: center;
         justify-content: center;
-        font-size: 30px;
+        font-size: 25px;
+        text-transform: uppercase;
+        letter-spacing: 8px;
         transition: all 0.5s ease-in-out;
         background-size: 350%;
         &:hover {
-            background-position: right;
-            background-size: 350%;
-
-            text-shadow: 0 0 45px #d0d6e0;
+            text-shadow: 0 0 45px 15px #d0d6e0;
         }
     }
 }
@@ -31,8 +30,7 @@
 .app__footer-container {
     border: 0.1rem solid rgba(208, 214, 224, 0.1);
     border-radius: 5px;
-    padding: 15rem 0;
-    width: 70%;
+    padding: 10rem 0;
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
@@ -41,6 +39,10 @@
     transition: all 0.5s ease-in-out;
     h2 {
         background-size: 190%;
+
+        .span-text {
+            background-size: 200%;
+        }
     }
     &:hover {
         border: 0.1rem solid rgba(208, 214, 224, 0.35);
@@ -61,7 +63,8 @@
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    margin: 3.5rem 0;
+    margin: 3.5rem 3.0rem;
+    padding: 0 10rem;
 
     @media screen and (max-width: 580px) {
         flex-direction: column;

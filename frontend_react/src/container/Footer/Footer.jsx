@@ -7,8 +7,8 @@ const Footer = () => {
         <>
             <div className='app__footer'>
                 <div className='app__footer-container'>
-                    <h2 className='head-text gradient__text-four'>
-                        Let's Connect and Make Something Happen
+                    <h2 className='head-text'>
+                        Let's <span className='gradient__text-six'>Connect</span> and Chat
                     </h2>
                     <div className='app__footer-cards'>
                         <div className='app__footer-card-email'>
