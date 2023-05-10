@@ -6,7 +6,7 @@ This was created with React JS, HTML, CSS (SCSS) and JavaScript. It is live at h
   <tr>
     <td><img src="./frontend_react/src/markdown assets/Hero.webp" alt="screenshot of website" width="100%"></td>
   </tr>
-    <td><img src="./frontend_react/src/markdown assets/skills.webp" alt="screenshot of website" width="100%"></td>
+    <td><img src="./frontend_react/src/markdown assets/Skills.webp" alt="screenshot of website" width="100%"></td>
   </tr>
 </table>
 
