@@ -16,7 +16,6 @@
     h2 {
         align-items: center;
         justify-content: center;
-        font-size: 25px;
         text-transform: uppercase;
         letter-spacing: 8px;
         transition: all 0.5s ease-in-out;
@@ -91,9 +90,8 @@
         color: var(--whiteColor);
         outline: none;
         font-family: var(--font-base);
-        font-size: 15px;
-
         text-decoration: none;
+        font-weight: 700;
     }
     transition: all 0.6s ease-in-out;
 
@@ -126,10 +124,10 @@
         color: var(--whiteColor);
         outline: none;
         font-family: var(--font-base);
-        font-size: 15px;
         background-image: var(--linkedin-gradient);
         background-size: 300%;
         text-decoration: none;
+        font-weight: 700;
     }
     transition: all 0.6s ease-in-out;
     &:hover {
@@ -157,11 +155,11 @@
 
     a {
         color: var(--whiteColor);
-        font-size: 15px;
         background-image: var(--github-gradient);
         background-size: 250%;
         text-decoration: none;
         text-align: center;
+        font-weight: 700;
     }
     transition: all 0.6s ease-in-out;
     &:hover {

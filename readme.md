@@ -10,6 +10,6 @@ This was created with React JS, HTML, CSS (SCSS) and JavaScript. It is live at h
   </tr>
 </table>
 
-The source code for most of the logic and styles are within this repo while the backend is powered by Sanity. APIs are used to feed in new Skills and Experiences, alter or update my existing projects.
+The source code for most of the logic and styles are within this repo while the backend is powered by Sanity. APIs are used to feed in new Skills and Experiences, alter or update my existing projects. Adopted from JavaScript Mastery.
 
-Currently, an "About" section is in progress.
+Currently, an **"About"** section is in progress.

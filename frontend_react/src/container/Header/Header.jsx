@@ -24,7 +24,7 @@ const Header = () => (
                 transition={{ duration: 2, ease: "easeInOut" }}
             >
                 <h2 className='bold-text'>Hello, I am</h2>
-                <h1 className='head-text gradient__text'>Akshil Nathu</h1>
+                <h1 className='main-text gradient__text'>Akshil Nathu</h1>
                 <p className='p-text'>
                     Software Engineer
                 </p>

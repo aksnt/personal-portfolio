@@ -84,7 +84,7 @@
     }
 }
 
-.head-text {
+.main-text {
     font-size: 2.75rem;
     font-weight: 800;
     text-align: center;
@@ -104,7 +104,31 @@
     }
 
     @media screen and (max-width: 580px) {
+        font-size: 2.25rem;
+    }
+}
+
+.head-text {
+    font-size: 2.75rem;
+    font-weight: 800;
+    text-align: center;
+    color: var(--primary-color);
+    text-transform: capitalize;
+
+    @media screen and (min-width: 2561px) {
+        font-size: 2.25rem;
+    }
+
+    @media screen and (max-width: 2560px) {
         font-size: 2rem;
+    }
+
+    @media screen and (max-width: 1080px) {
+        font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 580px) {
+        font-size: 1.25rem;
     }
 }
 
@@ -332,12 +356,8 @@
     -webkit-text-fill-color: transparent;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 1080px) {
     .app__navigation {
         display: none;
-    }
-
-    .copyright {
-        padding: 2rem;
     }
 }

@@ -35,8 +35,15 @@ const Work = () => {
     return (
         <>
             <div className='app__works'>
-                <h2 className='head-text gradient__text-thir'>PROJECTS</h2>
-
+            <motion.h2
+                    whileInView={{
+                        opacity: [0, 1],
+                        scale: [0.5, 2, 1],
+                    }}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                    className='head-text gradient__text-thir'
+                >PROJECTS
+                </motion.h2>
                 <div className='app__work-filter '>
                     {["Graphics", "React Apps", "Systems", "AI/ML", "All"].map(
                         (item, index) => (
@@ -54,7 +61,7 @@ const Work = () => {
                 </div>
                 <motion.div
                     animate={animateCard}
-                    transition={{ duration: 0.5, delayChildren: 0.5 }}
+                    transition={{ duration: 0.5, delayChildren: 0.7 }}
                     className='app__work-portfolio'
                 >
                     {filterWork.map((work, index) => (

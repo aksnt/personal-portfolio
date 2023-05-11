@@ -19,13 +19,30 @@ const Skills = () => {
     return (
         <>
             <div className='app__skills'>
-                <h2 className='gradient__text-sec'>SKILLS & EXPERIENCE</h2>
+                <motion.h2
+                    whileInView={{
+                        opacity: [0, 1],
+                        scale: [0.5, 1],
+                    }}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                    className='head-text gradient__text-sec'
+                >
+                    SKILLS & EXPERIENCE
+                </motion.h2>
                 <div className='app__skills-container'>
                     <div className='app__skills-exp'>
                         {experiences.map((experience) => (
                             <motion.div
                                 className='app__skills-exp-item'
                                 key={experience.year}
+                                whileInView={{
+                                    opacity: [0, 1],
+                                    scale: [0.5, 2, 1],
+                                }}
+                                transition={{
+                                    duration: 0.5,
+                                    ease: "easeInOut",
+                                }}
                             >
                                 <div className='app__skills-exp-year '>
                                     <h4 className='bold-text'>
