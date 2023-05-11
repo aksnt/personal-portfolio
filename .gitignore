@@ -6,3 +6,4 @@ frontend_react/.env
 frontend_react/src/container/About
 frontend_react/.DS_Store
 .DS_Store
+.vscode
