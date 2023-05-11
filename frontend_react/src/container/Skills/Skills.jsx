@@ -37,7 +37,6 @@ const Skills = () => {
                                 key={experience.year}
                                 whileInView={{
                                     opacity: [0, 1],
-                                    scale: [0.5, 2, 1],
                                 }}
                                 transition={{
                                     duration: 0.5,
